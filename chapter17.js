@@ -12,4 +12,4 @@ let item2 = arrC[1];
 console.log(item1, item2);  // 0번부터 시작임! (0번이 첫번째)
 
 arrC[0] = "hello";  // 배열 요소 바꾸기
-console.log(arrC)
+console.log(arrC);
