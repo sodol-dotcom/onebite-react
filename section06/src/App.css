@@ -1,0 +1,17 @@
+body {
+  padding: 20px;
+}
+
+.App {
+  margin: 0 auto;
+  /* 화면상 남는 부분을 자동으로 마진 설정을 한다. */
+  width: 400px;
+}
+
+.App > section {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
