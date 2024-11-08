@@ -12,7 +12,7 @@ const App = () => {
   const nav = useNavigate();
 
   const onClickButton = () => {
-    nav("/new")
+    nav("/new");
   };
 
   return (
@@ -28,7 +28,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/new" element={<New />} />
-        <Route path="/diary" element={<Diary />} />
+        <Route path="/diary/:id" element={<Diary />} />
         <Route path="*" element={<Nonfound />} />
       </Routes>
     </>
