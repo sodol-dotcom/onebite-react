@@ -10,15 +10,21 @@ import Notfound from "./pages/Notfound";
 const mockData = [
   {
     id: 1,
-    createdDate: new Date().getTime,
+    createdDate: new Date("2024-11-11").getTime(),
     emotionId: 1,
     content: "1번 일기 내용",
   },
   {
     id: 2,
-    createdDate: new Date().getTime,
+    createdDate: new Date("2024-11-10").getTime(),
     emotionId: 2,
     content: "2번 일기 내용",
+  },
+  {
+    id: 3,
+    createdDate: new Date("2024-10-30").getTime(),
+    emotionId: 3,
+    content: "3번 일기 내용",
   },
 ];
 
@@ -37,8 +43,8 @@ function reducer(state, action) {
   }
 }
 
-const DiaryStateContext = createContext();
-const DiaryDispatchContext = createContext();
+export const DiaryStateContext = createContext();
+export const DiaryDispatchContext = createContext();
 
 // 1. "/": 모든 일기를 조회하는 Home 페이지
 // 2. "/new": 새로운 일기를 작성하는 New 페이지
@@ -83,7 +89,6 @@ const App = () => {
 
   return (
     <>
-
       {/* Routes 안에는 Route 컴포넌만 들어갈 수 있고 
        Routes 밖에 배치된 요소들은 페이지 라우팅과 관련없이 모든 페이지에 동일하게 렌더링된다.(Notfound에서도!) */}
       <DiaryStateContext.Provider value={data}>
