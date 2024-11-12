@@ -1,0 +1,39 @@
+.Editor > section {
+  margin-bottom: 40px;
+}
+
+.Editor > section > h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Editor > section > input {
+  background-color: white;
+  border: solid 0.5px;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.Editor > section > textarea {
+  background-color: white;
+  border: solid 0.5px;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 15px;
+  width: 100%;
+  min-height: 200px;
+  resize: vertical;
+  box-sizing: border-box; /* 화면 밖으로 박스가 튀어나가지 않도록 */
+}
+
+.Editor .emotion_section .emotion_list_wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 2%;
+}
+
+.Editor .button_section {
+  display: flex;
+  justify-content: space-between;
+}
